@@ -10,6 +10,7 @@ $client = \Multicommerce\Gate\Client::initInstance([
 ]);
 ```
 ## Инициализация платежа
+```php
 $packet = $client->init([	      
     'amount' => 123000,
     'currency' => 'RUB',
@@ -35,3 +36,4 @@ if ($packet->isSuccess()) {
     // throw new Exception($err_message, $err_code);
 	    
 }
+```
