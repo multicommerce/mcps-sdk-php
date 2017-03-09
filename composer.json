@@ -1,0 +1,19 @@
+{
+    "name": "multicommerce/mcps-sdk-php",
+    "type": "library",
+    "description": "Multicommerce php sdk",
+    "license": "MIT",
+    "version": "0.0.1",
+    "authors": [
+        {         
+            "email": "rs@multicommerce.org",         
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-0": {
+            "Multicommerce\\Gate\\": "lib"
+        }
+    }
+}
