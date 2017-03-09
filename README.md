@@ -11,6 +11,8 @@ $client = \Multicommerce\Gate\Client::initInstance([
 ```
 ## Инициализация платежа
 ```php
+$client = \Multicommerce\Gate\Client::getInstance();
+
 $packet = $client->init([	      
     'amount' => 123000,
     'currency' => 'RUB',
@@ -35,5 +37,24 @@ if ($packet->isSuccess()) {
     $err_code = $packet->getCode();
     // throw new Exception($err_message, $err_code);
 	    
+}
+```
+## Получение состояния платежа
+```php
+$client = \Multicommerce\Gate\Client::getInstance();
+$packet = $client->statusByOrderId('123456789');
+if ($packet->isSuccess()) {
+   //...	    
+}
+
+```
+
+##Обработка callback
+```php
+if(isset($_POST['data']) {
+$client = \Multicommerce\Gate\Client::getInstance();
+$packet = $client->parseIncomingData($_POST['data']);
+$command = $packet->getValue('command');
+//...
 }
 ```

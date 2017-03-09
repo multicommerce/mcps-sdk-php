@@ -5,12 +5,14 @@
     "license": "MIT",
     "version": "0.0.1",
     "authors": [
-        {         
-            "email": "rs@multicommerce.org",         
+        {
+            "email": "rs@multicommerce.org",
             "role": "Developer"
         }
     ],
-    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.5"
+    },
     "autoload": {
         "psr-0": {
             "Multicommerce\\Gate\\": "lib"
