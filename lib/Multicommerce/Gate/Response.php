@@ -17,7 +17,7 @@ class Response {
     private $_sign_valid = false;
     private $_data = [];
     
-    private function __construct($status, $data) {
+    private function __construct() {
 	
     }
 
