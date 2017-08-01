@@ -1,6 +1,7 @@
 <?php
 
 namespace Multicommerce\Gate;
+use Exception;
 
 class Client {
 
